@@ -1,0 +1,14 @@
+# Токен — ключ от рекламного бюджета. В репозиторий не попадает никогда.
+reference/token.txt
+reference/token_stats.txt
+
+# Личные настройки: лимиты содержат токен Telegram-бота, товары — себестоимость.
+reference/limits.json
+reference/tovary.json
+
+# Рабочие данные: срезы кабинета, журнал изменений, логи сторожа.
+data/*
+!data/.gitkeep
+
+__pycache__/
+*.pyc
