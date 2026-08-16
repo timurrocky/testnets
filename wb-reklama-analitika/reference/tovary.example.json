@@ -1,0 +1,14 @@
+{
+  "123456789": {
+    "nazvanie": "Платье белое",
+    "cena": 1990,
+    "sebestoimost": 620,
+    "komissiya_i_logistika": 540
+  },
+  "987654321": {
+    "nazvanie": "Сумка",
+    "cena": 2490,
+    "sebestoimost": 900,
+    "komissiya_i_logistika": 610
+  }
+}

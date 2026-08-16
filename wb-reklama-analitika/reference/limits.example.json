@@ -1,0 +1,11 @@
+{
+  "MAX_CPM": 500,
+  "MAX_STEP_PERCENT": 20,
+  "TARGET_CPO": 300,
+  "TARGET_DRR": 15,
+  "MIN_CPM": 100,
+  "ALERT_SPEND": 1500,
+  "REPORT_TO": "chat",
+  "TG_BOT_TOKEN": "",
+  "TG_CHAT_ID": ""
+}
