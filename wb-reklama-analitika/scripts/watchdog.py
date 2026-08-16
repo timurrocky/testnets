@@ -6,8 +6,16 @@ data/istoriya.jsonl, из которой потом считаются «мёр�
     python3 scripts/watchdog.py           # одна проверка
     python3 scripts/watchdog.py --chasy   # разбор по часам за накопленный период
 
-В cron (Mac/Linux), проверка каждые 30 минут с 8 до 23:
-    */30 8-23 * * * cd /путь/к/wb-reklama-analitika && python3 scripts/watchdog.py >> data/watchdog.log 2>&1
+В cron (Mac/Linux), проверка каждые 30 минут с 8 до 23. Пути абсолютные — у cron
+своё окружение, и на тильде он спотыкается:
+
+    */30 8-23 * * * cd /Users/ИМЯ/.claude/skills/wb-reklama-analitika && /usr/bin/python3 scripts/watchdog.py >> /Users/ИМЯ/.claude/skills/wb-reklama-analitika/data/watchdog.log 2>&1
+
+Пять полей: минута, час, день месяца, месяц, день недели. Потеряешь звёздочку —
+расписание съедет влево и станет совсем другим.
+
+Токен cron берёт только из reference/token.txt: файл ~/.zshrc он не читает, и
+переменной окружения WB_API_TOKEN у него нет.
 """
 
 import argparse
